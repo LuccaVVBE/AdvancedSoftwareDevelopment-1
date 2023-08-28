@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProjectTreeState projectID="wgCuSbaGAqAAbTTJ" projectPath="C:\Users\lucca\Documents\Hogent\2S1\ASD1\ASDI_DP_State_OefFile_opgave\vpproject\ASDI_DP_State_OefFile_opgave.vpp">
+	<TreeState name="ModelRepository" viewX="0" viewY="0"/>
+	<TreeState name="DiagramNavigator" viewX="0" viewY="0">
+		<ExpandedPath>DiagramNavigator</ExpandedPath>
+		<ExpandedPath>DiagramNavigator,UML Diagrams</ExpandedPath>
+		<ExpandedPath>ClassDiagram</ExpandedPath>
+		<ExpandedPath>StateDiagram</ExpandedPath>
+		<SelectedPath>ClassDiagram,ZV7DOa6GAqAA1wnb</SelectedPath>
+	</TreeState>
+	<TreeState name="ClassBrowser" viewX="0" viewY="0">
+		<ExpandedPath>ClassBrowser</ExpandedPath>
+	</TreeState>
+	<TreeState name="LogicalView" viewX="0" viewY="0"/>
+	<TreeState name="DiagramBacklog" viewX="0" viewY="0"/>
+</ProjectTreeState>

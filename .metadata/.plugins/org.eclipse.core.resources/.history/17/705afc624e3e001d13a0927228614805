@@ -1,0 +1,51 @@
+package domein;
+
+import java.time.LocalDate;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import repository.ReductiebonDao;
+import repository.ReductiebonDaoJpa;
+
+public class ReductiebonBeheerder {
+
+	private ReductiebonDao reductiebonDao;
+	private List<Reductiebon> reductiebonLijst;
+
+	public ReductiebonBeheerder() {
+		reductiebonDao = new ReductiebonDaoJpa();
+		reductiebonLijst = reductiebonDao.findAll();
+	}
+
+	public List<Reductiebon> getReductiebonLijst() {
+		return Collections.unmodifiableList(reductiebonLijst);
+	}
+
+	// VRAAG1
+	public List<String> geefReductiebonCodes(int percentage) {
+		return reductiebonLijst.stream()
+				.filter(x->x.getPercentage()>percentage)
+				.map(x->x.getReductiebonCode()).toList();
+		
+	}
+
+	// VRAAG2
+	public void sorteerReductiebonnen() {
+		Collections.sort(reductiebonLijst, (o1, o2) -> o1.getPercentage()-o2.getPercentage());
+		
+	}
+
+	// VRAAG3
+	public double geefGemPercVanBonnenInToekomst() {
+		
+		return 
+	}
+
+	// VRAAG4
+	public List<LocalDate> geefUniekeEinddatums() {
+		return reductiebonLijst.stream().map(x->x.getEinddatum()).distinct().sorted().toList();
+
+
+	}
+
+}

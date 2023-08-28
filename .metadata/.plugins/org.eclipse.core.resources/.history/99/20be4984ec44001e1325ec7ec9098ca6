@@ -1,0 +1,33 @@
+package domein;
+
+import java.util.stream.Collectors;
+
+public class DomeinController {
+
+    private final BierWinkel bierWinkel;
+
+    public DomeinController() {
+        bierWinkel = new BierWinkel();
+    }
+	public String opzettenBierPerNaam() {
+		// TODO
+		
+		return bierWinkel.opzettenOverzichtBierPerNaam().values().stream().map(Bier::toString).collect(Collectors.joining("\n"));
+	}
+    public String opzettenAantalBierenPerSoort() {
+    	//TODO
+    	return null;
+    }
+
+    public String opzettenOverzichtBierenPerSoort() {
+    	//TODO
+    	return null;
+    }
+
+
+    //TODO na hoofdstuk generics 
+    //--> generieke oplossing "overzichtToString" methode
+    //
+
+
+}
